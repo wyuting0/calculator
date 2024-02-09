@@ -9,24 +9,24 @@
 <body>
     <div class="calculator">
         <input type="text" id="display" readonly>
-        <div class="buttons">
-            <button class="operator" onclick="appendToDisplay('+')">+</button>
-            <button onclick="appendToDisplay('7')">7</button>
-            <button onclick="appendToDisplay('8')">8</button>
-            <button onclick="appendToDisplay('9')">9</button>
-            <button class="operator" onclick="appendToDisplay('-')">-</button>
-            <button onclick="appendToDisplay('4')">4</button>
-            <button onclick="appendToDisplay('5')">5</button>
-            <button onclick="appendToDisplay('6')">6</button>
-            <button class="operator" onclick="appendToDisplay('*')">*</button>
-            <button onclick="appendToDisplay('1')">1</button>
-            <button onclick="appendToDisplay('2')">2</button>
-            <button onclick="appendToDisplay('3')">3</button>
-            <button class="operator" onclick="appendToDisplay('/')">/</button>
-            <button onclick="appendToDisplay('0')">0</button>
-            <button onclick="appendToDisplay('.')">.</button>
-            <button class="equal" onclick="calculateResult()">=</button>
-            <button class="clear" onclick="clearDisplay()">C</button>
+        <div class="buttons" onclick="handleButtonClick(event)">
+            <button class="operator" data-value="+" aria-label="Addition">+</button>
+            <button data-value="7">7</button>
+            <button data-value="8">8</button>
+            <button data-value="9">9</button>
+            <button class="operator" data-value="-" aria-label="Subtraction">-</button>
+            <button data-value="4">4</button>
+            <button data-value="5">5</button>
+            <button data-value="6">6</button>
+            <button class="operator" data-value="*" aria-label="Multiplication">*</button>
+            <button data-value="1">1</button>
+            <button data-value="2">2</button>
+            <button data-value="3">3</button>
+            <button class="operator" data-value="/" aria-label="Division">/</button>
+            <button data-value="0">0</button>
+            <button data-value="." aria-label="Decimal Point">.</button>
+            <button class="equal" data-value="=" aria-label="Equals">=</button>
+            <button class="clear" data-value="C" aria-label="Clear">C</button>
         </div>
     </div>
     <script src="script.js"></script>

@@ -5,13 +5,14 @@ body {
     height: 100vh;
     margin: 0;
     font-family: sans-serif;
+    background-color: hsl(0, 0%, 20%);
 }
 
 .calculator {
-    width: 300px;
+    width: 250px;
     padding: 20px;
-    border: 1px solid black;
-    border-radius: 5px;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 25px;
     overflow: hidden;
 }
 
@@ -21,6 +22,7 @@ body {
     padding: 10px;
     font-size: 18px;
     box-sizing: border-box;
+    border-radius: 5px;
     overflow: hidden;
 }
 
@@ -37,16 +39,11 @@ button {
     border-radius: 50%;
 }
 
-.operator {
+.operator, .equal, .clear {
     background-color: orange;
-    color: #fff;
-
-.equal {
-    background-color: grey;
     color: #fff;
 }
 
-.clear {
-    background-color: orange;
-    color: #fff;
+.equal {
+    background-color: grey;
 }
